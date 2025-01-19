@@ -18,7 +18,7 @@
             background-color: #003366;  /* Dark Blue Background */
             color: white;  /* White text for contrast */
             line-height: 1.6;
-            padding-bottom: 60px;  /* To prevent footer from covering content */
+            padding-bottom: 100px;  /* To prevent footer from covering content */
         }
 
         header {
@@ -28,8 +28,11 @@
             padding: 40px 0;
         }
 
+        /* Updated header text style */
         header h1 {
-            font-size: 2.5em;
+            font-size: 4em; /* Increase the font size */
+            font-family: 'Arial', sans-serif; /* You can change this font-family to anything you prefer */
+            font-weight: bold;
             margin-bottom: 0.5em;
         }
 
@@ -91,16 +94,15 @@
         footer {
             background-color: #002244;  /* Dark Blue footer */
             color: white;
-            text-align: center;
             padding: 20px 0;
-            position: relative;
-            bottom: 0;
+            position: fixed;
             width: 100%;
+            bottom: 0;
             display: flex;
             justify-content: center;
             align-items: center;
-            flex-direction: row; /* Aligns items horizontally */
-            gap: 20px; /* Adds space between text and logo */
+            gap: 15px; /* Adds space between text and logo */
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow to footer */
         }
 
         .contact-info {
@@ -108,13 +110,17 @@
             margin: 0;
         }
 
-        /* Instagram Logo */
+        .social-media {
+            display: flex;
+            align-items: center;
+        }
+
         .instagram-logo {
             width: 40px;
             height: 40px;
             background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png');
             background-size: cover;
-            margin: 0;
+            margin-right: 10px;
         }
 
         .social-media a {
@@ -130,11 +136,13 @@
             font-size: 1.2em;
             color: white;
         }
+
     </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to Zefyra</h1>
+        <!-- Updated header text -->
+        <h1>Zefyra</h1>  <!-- The new name for the header -->
         <h2>Smart. Sustainable. Simple</h2>
     </header>
 
@@ -143,8 +151,7 @@
     </div>
 
     <div class="content">
-        <p>At Zefyra, we are reimagining modern living through smarter, more sustainable home technologies. Our flagship Smart Home Energy Management System allows homeowners to monitor and optimize energy use in real time.</p>
-        <p>With the integration of AI, renewable energy solutions, and advanced automation, Zefyra empowers you to take control of your home’s energy consumption, helping you live a more eco-friendly and cost-efficient lifestyle.</p>
+        <p>At Zefyra, we are reimagining modern living through smarter, more sustainable home technologies. Our flagship Smart Home Energy Management System allows homeowners to monitor and optimize energy use in real time. With the integration of AI, renewable energy solutions, and advanced automation, Zefyra empowers you to take control of your home’s energy consumption, helping you live a more eco-friendly and cost-efficient lifestyle.</p>
     </div>
 
     <section>
