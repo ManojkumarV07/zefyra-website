@@ -18,6 +18,7 @@
             background-color: #003366;  /* Dark Blue Background */
             color: white;  /* White text for contrast */
             line-height: 1.6;
+            padding-bottom: 60px;  /* To prevent footer from covering content */
         }
 
         header {
@@ -86,43 +87,48 @@
             font-size: 1.1em;
         }
 
-        /* Footer */
+        /* Footer style */
         footer {
             background-color: #002244;  /* Dark Blue footer */
             color: white;
             text-align: center;
-            padding: 10px;
-            position: fixed;
-            width: 100%;
+            padding: 20px 0;
+            position: relative;
             bottom: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row; /* Aligns items horizontally */
+            gap: 20px; /* Adds space between text and logo */
         }
 
         .contact-info {
             font-size: 1.2em;
-        }
-
-        .social-media {
-            margin-top: 20px;
-        }
-
-        .social-media a {
-            text-decoration: none;
-            color: white;
-            font-size: 1.5em;
-            margin: 0 15px;
-        }
-
-        .social-media a:hover {
-            color: #f1f1f1;
+            margin: 0;
         }
 
         /* Instagram Logo */
         .instagram-logo {
-            width: 50px;
-            height: 50px;
+            width: 40px;
+            height: 40px;
             background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png');
             background-size: cover;
-            margin: 10px;
+            margin: 0;
+        }
+
+        .social-media a {
+            text-decoration: none;
+        }
+
+        .social-media a:hover {
+            opacity: 0.8;
+        }
+
+        /* Instagram text */
+        .instagram-text {
+            font-size: 1.2em;
+            color: white;
         }
     </style>
 </head>
@@ -169,6 +175,7 @@
             <a href="https://www.instagram.com/zefyra_life?igsh=ZGtpcXhmcDNjMWNi&utm_source=qr" target="_blank">
                 <div class="instagram-logo"></div>
             </a>
+            <p class="instagram-text">zefyra_life</p> <!-- Static Instagram text -->
         </div>
     </footer>
 </body>
