@@ -5,27 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zefyra - Smart, Sustainable, Simple</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #e8f5e9; /* Light green background */
-            color: #333;
+        /* General reset */
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
         }
 
         header {
-            background-color: #4CAF50; /* Green */
+            background-color: #004d99;  /* Dark Blue */
             color: white;
-            padding: 20px;
             text-align: center;
+            padding: 40px 0;
         }
 
-        h1 {
+        header h1 {
             font-size: 2.5em;
+            margin-bottom: 0.5em;
         }
 
-        h2 {
+        header h2 {
             font-size: 1.8em;
+            font-weight: normal;
         }
 
         .image-container {
@@ -45,8 +53,38 @@
             text-align: center;
         }
 
+        .description-box {
+            background-color: #003366;  /* Dark Blue */
+            color: white;
+            padding: 30px;
+            margin-top: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            max-width: 800px;
+            margin: 30px auto;
+            text-align: left;
+        }
+
+        .key-features {
+            text-align: left;
+            margin-top: 30px;
+            background-color: #003366;  /* Dark Blue */
+            color: white;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            max-width: 800px;
+            margin: 30px auto;
+        }
+
+        .key-features ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            font-size: 1.1em;
+        }
+
         footer {
-            background-color: #4CAF50;
+            background-color: #004d99;  /* Dark Blue */
             color: white;
             text-align: center;
             padding: 10px;
@@ -73,6 +111,15 @@
         .social-media a:hover {
             color: #f1f1f1;
         }
+
+        .instagram-logo {
+            width: 50px;
+            height: 50px;
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png');
+            background-size: cover;
+            margin: 10px;
+        }
+
     </style>
 </head>
 <body>
@@ -90,13 +137,36 @@
         <p>With the integration of AI, renewable energy solutions, and advanced automation, Zefyra empowers you to take control of your home’s energy consumption, helping you live a more eco-friendly and cost-efficient lifestyle.</p>
     </div>
 
+    <section>
+        <div class="description-box">
+            <h2>About Zefyra</h2>
+            <p>
+                Zefyra is an innovative startup focused on creating smarter and more efficient homes through advanced technology. Our flagship Smart Home Energy Management System helps homeowners monitor and optimize energy usage seamlessly, promoting sustainable and cost-effective living. By integrating AI automation, smart appliances, and renewable energy solutions, we empower users to take control of their energy consumption. At Zefyra, we prioritize convenience, innovation, and sustainability to redefine modern living. Together, we’re building homes that are smarter, efficient, and future-ready.
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <div class="key-features">
+            <h2>Key Features</h2>
+            <ul>
+                <li><strong>Smart Energy Monitoring:</strong> Tracks energy usage for each appliance.</li>
+                <li><strong>AI Optimization:</strong> Adjusts appliance settings for efficiency automatically.</li>
+                <li><strong>Solar & Battery Integration:</strong> Manages solar production and energy storage.</li>
+                <li><strong>Energy Insights & Alerts:</strong> Sends usage reports and detects inefficiencies.</li>
+                <li><strong>Smart Appliance Control:</strong> Optimizes operation times for smart devices.</li>
+            </ul>
+        </div>
+    </section>
+
     <footer>
         <p class="contact-info">Contact us: zefyrasupport@gmail.com | 9854326709</p>
         <div class="social-media">
             <a href="https://www.instagram.com/zefyra_life?igsh=ZGtpcXhmcDNjMWNi&utm_source=qr" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo" width="40" height="40">
+                <div class="instagram-logo"></div>
             </a>
         </div>
     </footer>
+
 </body>
 </html>
