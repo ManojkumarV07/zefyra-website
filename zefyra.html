@@ -3,221 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zefyra - Smart Home Energy Management</title>
+    <title>Zefyra - Smart, Sustainable, Simple</title>
     <style>
-        /* Reset some default styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        /* General body styling with gradient background */
         body {
             font-family: Arial, sans-serif;
-            line-height: 1.6;
-            background: linear-gradient(135deg, #e8f5e9 0%, #a5d6a7 100%);  /* Green gradient background */
+            background-color: #e8f5e9; /* Light green background */
             color: #333;
-            padding-top: 50px;  /* Adding space for fixed header */
-            background-attachment: fixed; /* Keeps background in place on scroll */
+            margin: 0;
+            padding: 0;
         }
 
-        /* Header styling */
         header {
-            background-color: #388e3c;  /* Green header background */
-            color: #fff;
-            padding: 30px;
+            background-color: #4CAF50; /* Green */
+            color: white;
+            padding: 20px;
             text-align: center;
         }
 
-        /* Logo styling */
-        .logo-container {
-            margin-bottom: 20px;
-        }
-
-        .logo-container img {
-            width: 150px;  /* Adjust the width to your logo size */
-            height: auto;
-        }
-
-        header h1 {
-            font-size: 3em;
-            margin-bottom: 10px;
-            color: #ffffff; /* White text for the brand name */
-        }
-
-        header p {
-            font-size: 1.5em;
-            color: #ffffff;
-        }
-
-        header .tagline {
-            font-size: 1.2em;
-            color: #fff;
-            margin-top: 10px;
-            font-style: italic;
-        }
-
-        /* Section styling */
-        section {
-            padding: 40px 20px;
-            margin: 20px auto;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            width: 90%;
-            max-width: 1200px;
-        }
-
-        section h2 {
+        h1 {
             font-size: 2.5em;
-            margin-bottom: 20px;
-            color: #0277bd; /* Blue color for headings */
         }
 
-        section p {
+        h2 {
+            font-size: 1.8em;
+        }
+
+        .image-container {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .image-container img {
+            max-width: 80%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .contact-info {
             font-size: 1.2em;
-            line-height: 1.8;
         }
 
-        /* List styling in features section */
-        section#features ul {
-            list-style-type: disc;
-            padding-left: 20px;
-            font-size: 1.2em;
-        }
-
-        section#features li {
-            margin-bottom: 10px;
-        }
-
-        /* Contact section */
-        section#contact a {
-            color: #0277bd;  /* Blue color for links */
-            text-decoration: none;
-        }
-
-        section#contact a:hover {
-            text-decoration: underline;
-        }
-
-        /* Social media links */
-        .social-links {
+        .social-media {
             margin-top: 20px;
         }
 
-        .social-links a {
-            display: inline-flex;
-            align-items: center;
-            padding: 10px 20px;
-            background: linear-gradient(45deg, #f77737, #fc5c7d, #d62976); /* Instagram brand gradient */
-            color: #fff;
-            font-size: 1.2em;
-            font-weight: bold;
-            border-radius: 5px;
+        .social-media a {
             text-decoration: none;
-            transition: background 0.3s ease, transform 0.3s ease;
+            color: white;
+            font-size: 1.5em;
+            margin: 0 15px;
         }
 
-        .social-links a:hover {
-            background: linear-gradient(45deg, #d62976, #fc5c7d, #f77737); /* Reversed gradient on hover */
-            transform: scale(1.05); /* Slight zoom effect on hover */
-        }
-
-        .social-links a .instagram-icon {
-            margin-right: 10px;
-            font-size: 1.5em; /* Slightly larger icon */
-        }
-
-        /* Instagram logo styling */
-        .instagram-logo {
-            width: 60px;
-            height: 60px;
-            background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png');
-            background-size: cover;
-            background-position: center;
-            border-radius: 15%;
-            border: 3px solid #fff; /* White border for visual effect */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
-            margin-right: 10px;
-        }
-
-        /* Adding hover effect for Instagram logo */
-        .instagram-logo:hover {
-            transform: scale(1.1); /* Slight zoom on hover */
-        }
-
-        /* Footer styling */
-        footer {
-            background-color: #388e3c;  /* Green footer background */
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-            margin-top: 50px;
-        }
-
-        /* Center content in the body */
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            min-height: 100vh;
+        .social-media a:hover {
+            color: #f1f1f1;
         }
     </style>
 </head>
 <body>
     <header>
-        <!-- Logo in the header -->
-        <div class="logo-container">
-            <img src="images/zefyra.jpg" alt="Zefyra Logo" class="logo"> <!-- Update path with correct image file name -->
-        </div>
-        <h1>Zefyra</h1>
-        <p>Your Smart Home Energy Management System</p>
-        <p class="tagline">Smart. Sustainable. Simple.</p>
+        <h1>Welcome to Zefyra</h1>
+        <h2>Smart. Sustainable. Simple</h2>
     </header>
 
-    <section id="intro">
-        <h2>Welcome to Zefyra</h2>
-        <p>At Zefyra, we’re redefining modern living by creating smarter and more efficient homes through advanced technology. Our Smart Home Energy Management System helps homeowners monitor and optimize energy usage seamlessly, promoting sustainable and cost-effective living. Join us in building homes that are future-ready.</p>
-    </section>
+    <div class="image-container">
+        <img src="images/zefyra.jpeg" alt="Zefyra Logo">
+    </div>
 
-    <section id="about">
-        <h2>About Zefyra</h2>
-        <p>Zefyra is an innovative startup focused on making homes smarter, more efficient, and sustainable. We integrate AI automation, smart appliances, and renewable energy solutions to empower homeowners with the tools to manage their energy consumption.</p>
-        <p>Our mission is to prioritize convenience, innovation, and sustainability, ensuring that every home is not just intelligent, but also eco-friendly and cost-efficient.</p>
-    </section>
-
-    <section id="features">
-        <h2>Our Features</h2>
-        <ul>
-            <li><strong>AI Automation:</strong> Seamlessly control and automate your home’s energy use through artificial intelligence.</li>
-            <li><strong>Smart Appliances:</strong> Integrate with smart devices to ensure your home operates efficiently, reducing waste and cost.</li>
-            <li><strong>Renewable Energy Solutions:</strong> Harness the power of solar and other renewable sources for sustainable energy management.</li>
-            <li><strong>Real-Time Energy Monitoring:</strong> Monitor your energy consumption and make informed decisions to reduce your carbon footprint.</li>
-        </ul>
-    </section>
-
-    <section id="contact">
-        <h2>Contact Zefyra</h2>
-        <p>If you want to learn more about our Smart Home Energy Management System or get in touch with us, feel free to reach out!</p>
-        <p>Email: <a href="mailto:zefyrasupport@zefyra.com">zefyrasupport@zefyra.com</a></p>
-        <p>Phone: <a href="tel:+919854326709">9854326709</a></p>
-        <div class="social-links">
-            <p>Follow us on Instagram:</p>
-            <a href="https://www.instagram.com/zefyra_life?igsh=ZGtpcXhmcDNjMWNi&utm_source=qr" target="_blank">
-                <div class="instagram-logo"></div>
-                Instagram
-            </a>
-        </div>
-    </section>
+    <div class="content">
+        <p>At Zefyra, we are reimagining modern living through smarter, more sustainable home technologies. Our flagship Smart Home Energy Management System allows homeowners to monitor and optimize energy use in real time.</p>
+        <p>With the integration of AI, renewable energy solutions, and advanced automation, Zefyra empowers you to take control of your home’s energy consumption, helping you live a more eco-friendly and cost-efficient lifestyle.</p>
+    </div>
 
     <footer>
-        <p>&copy; 2025 Zefyra. All Rights Reserved.</p>
+        <p class="contact-info">Contact us: zefyrasupport@gmail.com | 9854326709</p>
+        <div class="social-media">
+            <a href="https://www.instagram.com/zefyra_life?igsh=ZGtpcXhmcDNjMWNi&utm_source=qr" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo" width="40" height="40">
+            </a>
+        </div>
     </footer>
 </body>
 </html>
